@@ -9,24 +9,22 @@
 
                         <h4 class="text-center my-3 pb-3">To Do App</h4>
 
-                        <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                        <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" method="POST" action="/todo/create">
                             <div class="col-12">
                                 <div data-mdb-input-init class="form-outline">
-                                    <input type="text" id="form1" class="form-control" />
+                                    <input type="text" id="form1" class="form-control" name="content" />
                                     <label class="form-label" for="form1">Enter a task here</label>
                                 </div>
                             </div>
 
+                            <!-- Save 버튼 (할 일 추가하기) -->
                             <div class="col-12">
-                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Save</button>
+                                <button type="submit" name="action" value="create" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">create (할일 추가하기)</button>
                             </div>
 
+                            <!-- Get tasks 버튼 (목록 보여주기) -->
                             <div class="col-12">
-                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning">Get tasks</button>
-                            </div>
-
-                            <div class="col-12">
-                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning">Add</button>
+                                <button type="submit" name="action" value="getTasks" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning">Get tasks (목록보여주기)</button>
                             </div>
                         </form>
 
