@@ -61,7 +61,7 @@ public class ToDoController {
         //2. 대상 엔티티 삭제하기
         if(todo!=null) {
             todoRepository.delete(todo);
-            rttr.addFlashAttribute("msg","")
+            rttr.addFlashAttribute("msg","");
         }
         //3. 결과 페이지로 리다이렉트하기.
         return "redirect:/todo";
