@@ -22,10 +22,7 @@
                                 <button type="submit" name="action" value="create" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">create (할일 추가하기)</button>
                             </div>
 
-                            <!-- Get tasks 버튼 (목록 보여주기) -->
-                            <div class="col-12">
-                                <button type="submit" name="action" value="getTasks" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning">Get tasks (목록보여주기)</button>
-                            </div>
+
                         </form>
 
                         <table class="table mb-4">
@@ -40,7 +37,7 @@
                             {{#Todo}}
                             <tbody>
                             <tr>
-                                <th scope="row">{{id}}</th>
+                                <th scope="row">{{orderNumber}}</th>
                                 <td>{{content}}</td>
                                 <td>{{status}}</td>
                                 <td>

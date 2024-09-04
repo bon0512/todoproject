@@ -14,6 +14,10 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column
+    private Long orderNumber;
+
     @Column
     private String content;
 
@@ -29,6 +33,7 @@ public class Todo {
     public String toString() {
         return "Todo{" +
                 "id=" + id +
+                ", orderNumber=" + orderNumber +
                 ", content='" + content + '\'' +
                 ", status='" + status + '\'' +
                 '}';

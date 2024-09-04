@@ -17,6 +17,10 @@ public class TodoForm {
     }
 
     public Todo toEntity() {
-        return new Todo(null,content,"In prograss");
+        return new Todo(null,null,content,"In prograss");
+    }
+
+    public Todo toEntity(Long orderNumber){
+        return new Todo(null,orderNumber,content,"In prograss");
     }
 }
